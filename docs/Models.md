@@ -8,10 +8,10 @@ OpenAI API由一组具有不同功能和价格的模型组成。您还可以通�
 | 模型                                                                 | 描述                            |
 | ------------------------------------------------------------------ | ----------------------------- |
 | [GPT-3.5](https://platform.openai.com/docs/models/gpt-3-5)         | 一组基于GPT-3改进的模型，可以理解和生成自然语言或代码 |
-| [DALL·E](https://platform.openai.com/docs/models/dall-e)           | 一个可以根据给定的自然语言prompt生成和编辑图像的模型 |
-| [Whisper](https://platform.openai.com/docs/models/whisper)         | 可以将音频转换为文本的模型                 |
+| [DALL·E](https://platform.openai.com/docs/models/dall-e) ```Beta```          | 一个可以根据给定的自然语言prompt生成和编辑图像的模型 |
+| [Whisper](https://platform.openai.com/docs/models/whisper) ```Beta```        | 可以将音频转换为文本的模型                 |
 | [Embeddings](https://platform.openai.com/docs/models/embeddings)   | 一组可以将文本转换为数值形式的模型             |
-| [Codex](https://platform.openai.com/docs/models/codex)Limited beta | 一组能够理解和生成代码的模型，包括将自然语言转换为代码   |
+| [Codex](https://platform.openai.com/docs/models/codex)```Limited beta``` | 一组能够理解和生成代码的模型，包括将自然语言转换为代码   |
 | [Moderation](https://platform.openai.com/docs/models/moderation)   | 一个经过微调的模型，可以检测文本是否敏感或不安全      |
 | [GPT-3](https://platform.openai.com/docs/models/gpt-3)             | 一组能够理解和生成自然语言的模型              |
 
@@ -21,7 +21,7 @@ OpenAI API由一组具有不同功能和价格的模型组成。您还可以通�
 
 ## [GPT-3.5](https://platform.openai.com/docs/models/gpt-3-5)
 
-GPT-3.5模型可以理解和生成自然语言或代码。我们最有能力和最具成本效益的模型是gpt-3.5-turbo，它针对聊天进行了优化，但也适用于传统的completion任务。
+GPT-3.5模型可以理解和生成自然语言或代码。我们最有能力和最具成本效益的模型是```gpt-3.5-turbo```，它针对聊天进行了优化，但也适用于传统的completion任务。
 
 | 最新模型               | 描述                                                                                                                                               | 最大请求数        | 训练数据      |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | --------- |
@@ -31,13 +31,13 @@ GPT-3.5模型可以理解和生成自然语言或代码。我们最有能力和�
 | text-davinci-002   | 与text-davinci-003功能类似，但使用监督微调而不是强化学习进行训练                                                                                                         | 4,000 tokens | 截至2021年6月 |
 | code-davinci-002   | 为代码completion任务优化过                                                                                                                               | 4,000 tokens | 截至2021年6月
 
-我们建议在实验时使用gpt-3.5-turbo，因为它将产生最好的结果。一旦你让事情运转起来，你就可以看看其他模型是否能以更低的延迟和成本产生相同的结果。
+我们建议在实验时使用```gpt-3.5-turbo```，因为它将产生最好的结果。一旦你让事情运转起来，你就可以看看其他模型是否能以更低的延迟和成本产生相同的结果。
 
 OpenAI模型是非确定性的，这意味着相同的输入可以产生不同的输出。将[temperature](https://platform.openai.com/docs/api-reference/completions/create#completions/create-temperature)设置为0将使输出大部分是确定的，但仍可能会保留少量的可变性。
 
 ## Feature-specific模型
 
-新的gpt-3.5-turbo模型针对聊天进行了优化的同时，对传统的completion任务也非常有效。原始的GPT-3.5模型针对[文本completion](https://platform.openai.com/docs/guides/completion)进行了优化。
+新的```gpt-3.5-turbo```模型针对聊天进行了优化的同时，对传统的completion任务也非常有效。原始的GPT-3.5模型针对[文本completion](https://platform.openai.com/docs/guides/completion)进行了优化。
 
 我们用于创建[embeddings](https://platform.openai.com/docs/guides/embeddings) 和[编辑文本](https://platform.openai.com/docs/guides/completion/editing-text)的端点使用它们自己的专用模型集。
 
@@ -79,27 +79,27 @@ Ada通常是最快的模型，可以执行文本解析、地址更正和某些�
 
 ## 找到正确的模型
 
-试验gpt-3.5-turbo是了解API功能的好方法。在你知道你想要做什么之后，你可以继续使用gpt-3.5-turbo或其他模型，并尝试围绕它的功能进行优化。
+试验```gpt-3.5-turbo```是了解API功能的好方法。在你知道你想要做什么之后，你可以继续使用```gpt-3.5-turbo```或其他模型，并尝试围绕它的功能进行优化。
 
 您可以使用[GPT比较工具](https://gpttools.com/comparisontool)，该工具允许您并排运行不同的模型来比较输出、设置和响应时间，然后将数据下载到Excel电子表格中。
 
-## DALL·E
+## DALL·E ```Beta```
 
 DALL·E是一个可以根据自然语言的描述创建逼真的图像和艺术品的人工智能系统。我们目前支持以下功能，在给定prompt的情况下创建固定尺寸的新图像、编辑现有图像或创建用户提供的图像的变体。
 
 当前我们API提供的DALL·E模型是第二次迭代的成果，它产生的图像比一代DALL·E模型更真实、准确，并且分辨率提高了4倍。您可以通过我们的[实验室接口](https://labs.openai.com/)或[API](https://platform.openai.com/docs/guides/images/introduction)进行尝试。
 
-## Whisper
+## Whisper ```Beta```
 
 Whisper是一种通用的语音识别模型。它是在有各种音频的大型数据集上训练的，也是一个多任务模型，可以执行多语言语音识别以及语音翻译和语言识别。Whisper v2-large模型目前可以使用Whisper -1模型的名称，通过我们的API访问。
 
 目前，[Whisper的开源版本](https://github.com/openai/whisper)和通过我们的API可用的版本之间没有区别。然而，通过我们的API，我们提供了一个优化的推理过程，这使得通过我们的API运行Whisper比通过其他方式快得多。关于Whisper的更多技术细节，你可以阅读[相关论文](https://arxiv.org/abs/2212.04356)。
 
-Embeddings
+## Embeddings
 
-Embedding是一种文本的数字表示，可用于测量两段文本之间的相关性。我们的第二代Embedding模型，text-embedded-ada-002，是一种低成本的模型，它被用来取代之前的16个第一代Embedding模型。Embedding对于搜索、聚类、推荐、异常检测和分类任务非常有用。您可以在[公告博客文章](https://openai.com/blog/new-and-improved-embedding-model)中了解更多关于我们最新的Embedding模型的信息。
+Embedding是一种文本的数字表示，可用于测量两段文本之间的相关性。我们的第二代Embedding模型，```text-embedded-ada-002```，是一种低成本的模型，它被用来取代之前的16个第一代Embedding模型。Embedding对于搜索、聚类、推荐、异常检测和分类任务非常有用。您可以在[公告博客文章](https://openai.com/blog/new-and-improved-embedding-model)中了解更多关于我们最新的Embedding模型的信息。
 
-## Codex Limited beta
+## Codex ```Limited beta```
 
 Codex模型是GPT-3模型的后代，它可以理解和生成代码。它们的训练数据既包含自然语言，也包含来自GitHub的数十亿行公共代码。[了解更多](https://help.openai.com/en/articles/5480054)。
 
@@ -116,7 +116,7 @@ Codex模型是GPT-3模型的后代，它可以理解和生成代码。它们的�
 
 ## Moderation
 
-Moderation模型用于检查内容是否符合OpenAI的[使用政策](https://platform.openai.com/docs/usage-policies/)。这些模型提供了分类功能，可以在以下类别中查找内容:仇恨、仇恨/威胁、自残、性、性/未成年人、暴力和暴力/图像。你可以在我们的[审核指南](https://platform.openai.com/docs/guides/moderation/overview)中找到更多信息。
+Moderation模型用于检查内容是否符合OpenAI的[使用政策](Usage_Policies.md)。这些模型提供了分类功能，可以在以下类别中查找内容:仇恨、仇恨/威胁、自残、性、性/未成年人、暴力和暴力/图像。你可以在我们的[审核指南](https://platform.openai.com/docs/guides/moderation/overview)中找到更多信息。
 
 | 模型                     | 描述                           |
 | ---------------------- | ---------------------------- |
@@ -125,7 +125,7 @@ Moderation模型用于检查内容是否符合OpenAI的[使用政策](https://pl
 
 ## GPT-3
 
-GPT-3模型能够理解和生成自然语言。这些模型被更强大的GPT-3.5代模型所取代。然而，最初的GPT-3基础模型(davinci、curie、ada和babbage)是目前唯一可用于微调的模型。
+GPT-3模型能够理解和生成自然语言。这些模型被更强大的GPT-3.5代模型所取代。然而，最初的GPT-3基础模型(```davinci```、```curie```、```ada```和```babbage```)是目前唯一可用于微调的模型。
 
 | 最新模型             | 描述                                   | 最大请求数        | 训练数据       |
 | ---------------- | ------------------------------------ | ------------ | ---------- |
@@ -136,3 +136,28 @@ GPT-3模型能够理解和生成自然语言。这些模型被更强大的GPT-3.
 | curie            | 非常有能力，但比davinci更快，成本更低。              | 2,048 tokens | 截至2019年10月 |
 | babbage          | 能够完成简单任务，非常快，成本更低。                   | 2,048 tokens | 截至2019年10月 |
 | ada              | 能够完成非常简单的任务，通常是GPT-3系列中速度最快的模型，成本最低。 | 2,048 tokens | 截至2019年10月
+
+## 模型终端的兼容性
+
+| 模型名称                 | 终端                                        |
+| ----------------------- | ------------------------------------------------ |
+| gpt-3.5-turbo           | /v1/chat/completions                             |
+| gpt-3.5-turbo-0301      | /v1/chat/completions                             |
+| text-davinci-003        | /v1/completions                                  |
+| text-davinci-002        | /v1/completions`                                |
+| text-davinci-edit-001   | /v1/edits                                        |
+| code-davinci-edit-001   | /v1/edits                                        |
+| whisper-1               | /v1/audio/transcriptions, /v1/audio/translations |
+| text-curie-001          | /v1/completions                                  |
+| text-babbage-001        | /v1/completions                                  |
+| text-ada-001            | /v1/completions                                  |
+| davinci                 | /v1/completions, /v1/fine-tunes                  |
+| curie                   | /v1/completions, /v1/fine-tunes                  |
+| babbage                 | /v1/completions, /v1/fine-tunes                  |
+| ada                     | /v1/completions, /v1/fine-tunes                  |
+| text-embedding-ada-002  | /v1/embeddings                                   |
+| text-search-ada-doc-001 | /v1/embeddings                                   |
+| text-moderation-stable  | /v1/moderations                                  |
+| text-moderation-latest  | /v1/moderations                                  |
+
+此列表不包括我们的[first-generation embedding](https://platform.openai.com/docs/guides/embeddings/similarity-embeddings) 模型以及 [DALL·E](https://platform.openai.com/docs/guides/images/image-generation-beta)模型.

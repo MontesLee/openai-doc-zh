@@ -216,7 +216,7 @@ response = openai.Completion.create(
 
 模型和价格
 
-我们提供了一系列不同能力和[价位](https://openai.com/api/pricing/)的[模型](https://platform.openai.com/docs/models)。在本教程中，我们使用了我们能力最强的自然语言模型text-davinci-003。我们建议在实验时使用这个模型，因为它将产生最好的结果。一旦你让事情运转起来，你就可以看看其他模型是否能以更低的延迟和成本产生相同的结果。
+我们提供了一系列不同能力和[价位](https://openai.com/api/pricing/)的[模型](Models.md)。在本教程中，我们使用了我们能力最强的自然语言模型text-davinci-003。我们建议在实验时使用这个模型，因为它将产生最好的结果。一旦你让事情运转起来，你就可以看看其他模型是否能以更低的延迟和成本产生相同的结果。
 
 在单个请求中处理的token总数(提示和完成)不能超过模型的最大上下文长度。对于大多数模型，这是2048个标记或大约1500个单词。从粗略的经验来看，对于英语文本来说，1个token大约是4个字符或0.75个单词。
 
@@ -234,6 +234,6 @@ response = openai.Completion.create(
 
 ● 探索我们的[prompt示例](https://platform.openai.com/examples)库。
 
-● 开始在[游乐场](https://platform.openai.com/playground)上做实验。
+● 开始在[试验场](https://platform.openai.com/playground)上做实验。
 
-● 在开始构建时，请牢记我们的[使用政策](https://platform.openai.com/docs/usage-policies)。
+● 在开始构建时，请牢记我们的[使用政策](Usage_Policies.md)。

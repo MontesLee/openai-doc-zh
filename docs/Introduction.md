@@ -12,7 +12,7 @@ OpenAI API几乎可以应用于任何涉及理解或生成自然语言或代码�
 
 **快速入门教程**
 
-[通过构建一个快速示例应用程序来学习](https://platform.openai.com/docs/quickstart)
+[通过构建一个快速示例应用程序来学习](Quickstart.md)
 
 ## Prompts and completions
 
@@ -28,11 +28,11 @@ OpenAI API几乎可以应用于任何涉及理解或生成自然语言或代码�
 
 ## 模型
 
-API由一组具有不同功能和价格的模型组成。我们的基础GPT-3模型被称为Davinci、Curie、Babbage和Ada。我们的上述代码生成器（codex）是基于自然语言和代码训练而产生的GPT-3的衍生品。要了解更多信息，请访问我们的[模型文档](https://platform.openai.com/docs/models)。
+API由一组具有不同功能和价格的模型组成。我们的基础GPT-3模型被称为Davinci、Curie、Babbage和Ada。我们的上述代码生成器（codex）是基于自然语言和代码训练而产生的GPT-3的衍生品。要了解更多信息，请访问我们的[模型文档](Models.md)。
 
 ## 下一步
 
-在开始构建应用程序时，请牢记我们的[使用政策](https://platform.openai.com/docs/usage-policies)。
+在开始构建应用程序时，请牢记我们的[使用政策](Usage_Policies.md)。
 
 探索我们的[示例库](https://platform.openai.com/examples)以获取灵感。
 

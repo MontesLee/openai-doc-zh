@@ -5,7 +5,7 @@
 
 ## 开始
 
-一些Python和GitHub的基本知识对本教程很有帮助。在开始之前，请确保[你有一个OpenAI API key](https://platform.openai.com/docs/api-reference/introduction)并完成了[快速入门教程](https://platform.openai.com/docs/quickstart)。这将使您直观地了解如何充分发挥API的潜力。
+一些Python和GitHub的基本知识对本教程很有帮助。在开始之前，请确保[你有一个OpenAI API key](https://platform.openai.com/docs/api-reference/introduction)并完成了[快速入门教程](Quickstart.md)。这将使您直观地了解如何充分发挥API的潜力。
 
 使用OpenAI、Pandas、transformer、NumPy和其他流行的包时，Python被用作主要的编程语言。如果您在本教程中遇到任何问题，请在[OpenAI社区论坛](https://community.openai.com/)上提问。
 
@@ -360,7 +360,7 @@ df['embeddings'] = df['embeddings'].apply(eval).apply(np.array)
 df.head()
 ```
 
-现在数据已经准备好了，需要将问题转换为使用简单函数的Embedding。这很重要，因为使用Embedding的搜索，通过余弦距离来比较数字向量的大小(这是原始文本的转换)。如果几个向量在余弦距离上很接近，那么它们很可能是相关的，就可能是问题的答案。OpenAI python包有一个内置的distances_from_embeddings函数，可以在这里使用。
+现在数据已经准备好了，需要将问题转换为使用简单函数的Embedding。这很重要，因为使用Embedding的搜索，通过余弦距离来比较数字向量的大小(这是原始文本的转换)。如果几个向量在余弦距离上很接近，那么它们很可能是相关的，就可能是问题的答案。OpenAI python包有一个内置的```distances_from_embeddings```函数，可以在这里使用。
 
 ```
 def create_context(
@@ -403,7 +403,7 @@ def create_context(
 
 然后，回答prompt将尝试从检索到的上下文中提取相关事实，以形成一个连贯的答案。如果没有相关的答案，prompt将返回“我不知道”。
 
-可以使用text-davinci-003的completion终端，为问题创建听起来更真实的答案。
+可以使用```text-davinci-003```的completion终端，为问题创建听起来更真实的答案。
 
 ```
 def answer_question(
