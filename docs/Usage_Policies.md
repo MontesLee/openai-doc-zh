@@ -1,4 +1,5 @@
 # 使用政策
+[查看原版文档](https://platform.openai.com/docs/usage-policies)
 
 2023年2月15日更新
 

@@ -1,4 +1,5 @@
 # 教程
+[查看原版文档](https://platform.openai.com/docs/tutorials)
 
 通过逐步构建真正的AI应用程序，上手OpenAI API。
 

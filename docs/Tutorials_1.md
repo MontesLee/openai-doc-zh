@@ -1,4 +1,5 @@
 # 如何构建一个可以回答你网站问题的人工智能
+[查看原版文档](https://platform.openai.com/docs/tutorials/web-qa-embeddings)
 
 本教程介绍了一个抓取网站(本例中是OpenAI网站)的简单示例，使用[Embeddings API](https://platform.openai.com/docs/guides/embeddings)将抓取的页面转换为Embedding，然后创建一个基本的搜索功能，允许用户询问关于Embedding信息的问题。这旨在成为使用自定义知识库打造更复杂的应用程序的起点。
 

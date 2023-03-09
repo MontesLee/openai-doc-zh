@@ -1,4 +1,5 @@
 # API数据使用政策
+[查看原版文档](https://platform.openai.com/docs/data-usage-policies)
 
 2023年3月1日更新
 

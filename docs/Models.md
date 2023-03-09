@@ -1,4 +1,5 @@
 # 模型
+[查看原版文档](https://platform.openai.com/docs/models)
 
 ## 概述
 
