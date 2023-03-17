@@ -34,10 +34,10 @@ OpenAI 是一个开放的人工智能平台，提供了多种人工智能模型�
 <br/>
 
 ### 指南
-#### 文本 completion
-#### 代码 completion
-#### 聊天 completion
-#### 图像生成
+#### [文本 completion](docs/Text_Completion.md)
+#### [代码 completion](docs/Code_Completion.md)
+#### [聊天 completion](docs/Chat_Completions.md)
+#### [图像生成](docs/Image_Generation.md)
 #### 微调
 #### Embeddings
 #### 语音转文字
