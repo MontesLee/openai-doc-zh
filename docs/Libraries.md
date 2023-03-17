@@ -4,13 +4,13 @@
 
 ## Python library
 
-我们提供了一个Python库，您可以按如下方式安装:
+我们提供了一个Python库，你可以按如下方式安装:
 
 ```
 $ pip install openai
 ```
 
-安装完成后，您可以使用绑定和密钥来运行以下命令:
+安装完成后，你可以使用绑定和密钥来运行以下命令:
 
 ```
 import os
@@ -22,7 +22,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 response = openai.Completion.create(model="text-davinci-003", prompt="Say this is a test", temperature=0, max_tokens=7)
 ```
 
-绑定还将安装一个命令行实用工具，您可以像下面这样使用:
+绑定还将安装一个命令行实用工具，你可以像下面这样使用:
 
 ```
 $ openai api completions.create -m text-davinci-003 -p "Say this is a test" -t 0 -M 7 --stream
@@ -36,7 +36,7 @@ $ openai api completions.create -m text-davinci-003 -p "Say this is a test" -t 0
 $ npm install openai
 ```
 
-安装后，您可以使用库和密钥来运行以下命令:
+安装后，你可以使用库和密钥来运行以下命令:
 
 ```
 const { Configuration, OpenAIApi } = require("openai");
@@ -54,7 +54,7 @@ const response = await openai.createCompletion({
 
 ## 社区代码库
 
-下面的库由更广泛的开发社区构建和维护。如果您想在这里添加一个新库，请按照我们帮助中心文章中关于添加社区库的说明进行操作。
+下面的库由更广泛的开发社区构建和维护。如果你想在这里添加一个新库，请按照我们帮助中心文章中关于添加社区库的说明进行操作。
 
 请注意，OpenAI不会验证这些项目的正确性或安全性。
 

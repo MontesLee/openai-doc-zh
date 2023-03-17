@@ -3,7 +3,7 @@
 
 OpenAI已经训练出了非常擅长理解和生成文本的尖端语言模型。我们的API提供了对这些模型的访问，可以用于解决几乎任何涉及处理语言的任务。
 
-在本快速入门教程中，您将构建一个简单的示例应用程序。在此过程中，您将学习在各种任务中使用API的基本概念和技术，包括:
+在本快速入门教程中，你将构建一个简单的示例应用程序。在此过程中，你将学习在各种任务中使用API的基本概念和技术，包括:
 
 ● 内容生成
 
@@ -19,7 +19,7 @@ OpenAI已经训练出了非常擅长理解和生成文本的尖端语言模型�
 
 ## 简介
 
-[completions](https://platform.openai.com/docs/api-reference/completions)端点是我们API的核心，提供了一个非常灵活和强大的简单接口。您输入一些文本作为prompt，API将返回一个文本completion，试图匹配您给它的任何指令或上下文。
+[completions](https://platform.openai.com/docs/api-reference/completions)端点是我们API的核心，提供了一个非常灵活和强大的简单接口。你输入一些文本作为prompt，API将返回一个文本completion，试图匹配你给它的任何指令或上下文。
 
 prompt： 为冰淇淋店写一句标语。
 
@@ -29,7 +29,7 @@ completion： 我们为每一勺冰淇淋提供微笑!
 
 ## 从指令开始
 
-假设您想要创建一个宠物名生成器。从零开始起名字是很难的!
+假设你想要创建一个宠物名生成器。从零开始起名字是很难的!
 
 首先，你需要一个能明确你想要什么的prompt。让我们从一个指令开始。提交此prompt以生成你的第一个completion。
 
@@ -44,7 +44,7 @@ completion： 我们为每一勺冰淇淋提供微笑!
 帮我给一匹黑马取一个名字。    [原文可以提交prompt]
 ```
 
-如您所见，向prompt中添加一个简单的形容词会改变completion的结果。设计你的prompt本质上是你如何为模型“编程”。
+如你所见，向prompt中添加一个简单的形容词会改变completion的结果。设计你的prompt本质上是你如何为模型“编程”。
 
 ## 再多一些例子
 
@@ -81,9 +81,9 @@ completion： 我们为每一勺冰淇淋提供微笑!
 
 ## 调整你的设置
 
-prompt设计并不是您可以使用的唯一工具。您还可以通过调整设置来控制completion。最重要的设置之一叫做temperature。
+prompt设计并不是你可以使用的唯一工具。你还可以通过调整设置来控制completion。最重要的设置之一叫做temperature。
 
-您可能已经注意到，如果在上面的示例中多次提交相同的prompt，模型将总是返回相同或非常相似的completion。这是因为temperature被设为0。
+你可能已经注意到，如果在上面的示例中多次提交相同的prompt，模型将总是返回相同或非常相似的completion。这是因为temperature被设为0。
 
 尝试在temperature设置为1的情况下重新提交相同的prompt几次。
 
@@ -106,7 +106,7 @@ prompt设计并不是您可以使用的唯一工具。您还可以通过调整�
 
 看看发生了什么?当temperature高于0时，每次提交相同的prompt会产生不同的completion。
 
-记住，该模型用来预测一段文本后面最有可能出现什么样的文本。temperature是一个介于0和1之间的值，它本质上用于让您控制模型在进行这些预测时的自信程度。降低temperature意味着风险更小，completion将更加准确和确定。提高temperature将产生更多样化的completion。
+记住，该模型用来预测一段文本后面最有可能出现什么样的文本。temperature是一个介于0和1之间的值，它本质上用于让你控制模型在进行这些预测时的自信程度。降低temperature意味着风险更小，completion将更加准确和确定。提高temperature将产生更多样化的completion。
 
 
 ```js
@@ -139,16 +139,16 @@ prompt设计并不是您可以使用的唯一工具。您还可以通过调整�
 
 ```js
 对于希望输出值非常明确的任务，通常最好设置较低的temperature。较高的temperature可能对需要多样性或创造性
-的任务更有用，或者如果您想为最终用户或领域专家生成一些可供选择的变化。
+的任务更有用，或者如果你想为最终用户或领域专家生成一些可供选择的变化。
 ```
 
-对于宠物名生成器，您可能希望能够生成许多名字。将temperature设为适中的0.6就可以了。
+对于宠物名生成器，你可能希望能够生成许多名字。将temperature设为适中的0.6就可以了。
 
 ## 构建应用程序
 
 PYTHON(FLASK) 　　[原文有NODE.JS版本]
 
-现在您已经找到了一个很好的prompt和设置，您已经准备好构建您的宠物名生成器了!我们已经写了一些代码让你开始——按照下面的说明下载代码并运行应用程序。
+现在你已经找到了一个很好的prompt和设置，你已经准备好构建你的宠物名生成器了!我们已经写了一些代码让你开始——按照下面的说明下载代码并运行应用程序。
 
 ### 安装
 
@@ -158,15 +158,15 @@ PYTHON(FLASK) 　　[原文有NODE.JS版本]
 git clone https://github.com/openai/openai-quickstart-python.git
 ```
 
-如果您不喜欢使用git，也可以使用这个[zip文件](https://github.com/openai/openai-quickstart-python/archive/refs/heads/master.zip)下载代码。
+如果你不喜欢使用git，也可以使用这个[zip文件](https://github.com/openai/openai-quickstart-python/archive/refs/heads/master.zip)下载代码。
 
 ### 添加API key
 
-要让应用程序工作，您需要一个API key。你可以通过[注册](https://platform.openai.com/signup)一个账户并返回到这个页面来获得API key。
+要让应用程序工作，你需要一个API key。你可以通过[注册](https://platform.openai.com/signup)一个账户并返回到这个页面来获得API key。
 
 ### 运行应用程序
 
-在项目目录中运行以下命令来安装依赖项并运行应用程序。运行这些命令时，根据您的设置，您可能需要键入python3/pip3而不是python/pip。
+在项目目录中运行以下命令来安装依赖项并运行应用程序。运行这些命令时，根据你的设置，你可能需要键入python3/pip3而不是python/pip。
 
 ```
 python -m venv venv
@@ -175,11 +175,11 @@ pip install -r requirements.txt
 flask run
 ```
 
-在浏览器中打开http://localhost:5000 ，您应该会看到宠物名生成器!
+在浏览器中打开http://localhost:5000 ，你应该会看到宠物名生成器!
 
 ### 理解代码
 
-打开openai-quickstart-python文件夹中的app.py。在底部，您将看到生成我们上面使用的prompt的函数。由于用户将输入他们的宠物的动物类型，它将动态地替换prompt中指定动物的部分。
+打开openai-quickstart-python文件夹中的app.py。在底部，你将看到生成我们上面使用的prompt的函数。由于用户将输入他们的宠物的动物类型，它将动态地替换prompt中指定动物的部分。
 
 ```
 def generate_prompt(animal):
@@ -193,7 +193,7 @@ Animal: {}
 Names:""".format(animal.capitalize())
 ```
 
-在app.py的第14行，您将看到发送实际API请求的代码。如上所述，它使用temperature为0.6的completion端点。
+在app.py的第14行，你将看到发送实际API请求的代码。如上所述，它使用temperature为0.6的completion端点。
 
 ```
 response = openai.Completion.create(
@@ -203,11 +203,11 @@ response = openai.Completion.create(
 )
 ```
 
-就是这样!现在您应该已经完全理解了您的(超级英雄)宠物名生成器是如何使用OpenAI API的！
+就是这样!现在你应该已经完全理解了你的(超级英雄)宠物名生成器是如何使用OpenAI API的！
 
 ## 结尾
 
-这些概念和技术将在很大程度上帮助您构建自己的应用程序。也就是说，这个简单的示例只演示了可能实现的功能的一小部分！completion端点非常灵活，几乎可以解决任何语言处理任务，包括内容生成、摘要、语义搜索、主题标记、情绪分析等等。
+这些概念和技术将在很大程度上帮助你构建自己的应用程序。也就是说，这个简单的示例只演示了可能实现的功能的一小部分！completion端点非常灵活，几乎可以解决任何语言处理任务，包括内容生成、摘要、语义搜索、主题标记、情绪分析等等。
 
 要记住的一个限制是，对于大多数模型，在prompt和completion之间，单个API请求最多只能处理2048个token(大约1500个单词)。
 
@@ -224,7 +224,7 @@ response = openai.Completion.create(
 </table></tr></td>
 
 
-对于更高级的任务，你可能会发现自己希望能提供更多的例子或上下文，而不是一个简单的提示。对于像这样更高级的任务，微调API是一个很好的选择。微调允许您提供数百甚至数千个示例，以便为特定的用例定制模型。
+对于更高级的任务，你可能会发现自己希望能提供更多的例子或上下文，而不是一个简单的提示。对于像这样更高级的任务，微调API是一个很好的选择。微调允许你提供数百甚至数千个示例，以便为特定的用例定制模型。
 
 ## 下一步
 

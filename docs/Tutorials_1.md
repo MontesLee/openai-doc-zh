@@ -5,9 +5,9 @@
 
 ## 开始
 
-一些Python和GitHub的基本知识对本教程很有帮助。在开始之前，请确保[你有一个OpenAI API key](https://platform.openai.com/docs/api-reference/introduction)并完成了[快速入门教程](Quickstart.md)。这将使您直观地了解如何充分发挥API的潜力。
+一些Python和GitHub的基本知识对本教程很有帮助。在开始之前，请确保[你有一个OpenAI API key](https://platform.openai.com/docs/api-reference/introduction)并完成了[快速入门教程](Quickstart.md)。这将使你直观地了解如何充分发挥API的潜力。
 
-使用OpenAI、Pandas、transformer、NumPy和其他流行的包时，Python被用作主要的编程语言。如果您在本教程中遇到任何问题，请在[OpenAI社区论坛](https://community.openai.com/)上提问。
+使用OpenAI、Pandas、transformer、NumPy和其他流行的包时，Python被用作主要的编程语言。如果你在本教程中遇到任何问题，请在[OpenAI社区论坛](https://community.openai.com/)上提问。
 
 从代码开始，在GitHub上克隆本教程的完整代码。或者，跟随教程并将每个部分复制到Jupyter notebook中，然后一步一步地运行代码，或者只是跟着阅读。避免任何问题的好方法是通过运行以下命令来设置一个新的虚拟环境并安装所需的包：
 
@@ -27,7 +27,7 @@ pip install -r requirements.txt
 
 ![](https://cdn.openai.com/API/docs/images/tutorials/web-qa/DALL-E-coding-a-web-crawling-system-pixel-art.webp)
 
-获取文本形式的数据是使用Embedding的第一步。本教程通过抓取OpenAI网站来创建一组新的数据，这种技术也可以用于您自己的公司或个人网站。[查看源代码](https://github.com/openai/openai-cookbook/tree/main/apps/web-crawl-q-and-a)
+获取文本形式的数据是使用Embedding的第一步。本教程通过抓取OpenAI网站来创建一组新的数据，这种技术也可以用于你自己的公司或个人网站。[查看源代码](https://github.com/openai/openai-cookbook/tree/main/apps/web-crawl-q-and-a)
 
 这个爬虫将从下面代码中传入的根URL开始，访问每个页面，找到更多其他的链接，并访问这些页面(只要它们具有相同的根域名)。首先，导入所需的包，设置基本URL，并定义一个HTMLParser类。
 
@@ -186,7 +186,7 @@ crawl(full_url)
 
 ![](https://cdn.openai.com/API/docs/images/tutorials/web-qa/DALL-E-woman-turning-a-stack-of-papers-into-numbers-pixel-art.webp)
 
-CSV是存储Embeddings的通用格式。你可以在Python中使用这种格式，将原始文本文件(在文本目录中)转换为Pandas数据帧。Pandas是一个流行的开源库，可以帮助您处理表格数据(存储在行和列中的数据)。
+CSV是存储Embeddings的通用格式。你可以在Python中使用这种格式，将原始文本文件(在文本目录中)转换为Pandas数据帧。Pandas是一个流行的开源库，可以帮助你处理表格数据(存储在行和列中的数据)。
 
 空白行会使文本文件变得混乱，使它们更难处理。一个简单的函数可以删除这些行并整理文件。
 
@@ -203,7 +203,7 @@ def remove_newlines(serie):
 
 ```
 额外的间距和新行会使文本变得混乱，并使Embeddings过程复杂化。这里使用的代码
-有助于删除其中一些字符，但您可能会发现第三方库或其他方法可以删除更多不必要的
+有助于删除其中一些字符，但你可能会发现第三方库或其他方法可以删除更多不必要的
 字符。
 ```
 

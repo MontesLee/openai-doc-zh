@@ -5,7 +5,7 @@
 
 我们希望每个人都能安全负责地使用我们的工具。这就是为什么我们撰写了适用于使用OpenAI模型、工具和服务的所有用户的使用策略。遵循它们，你需要确保我们的技术被用于好的方面。
 
-如果我们发现您的产品或使用不遵守这些政策，我们可能会要求您做出必要的更改。重复或严重的违规行为可能导致进一步的行动，包括暂停或终止您的帐户。
+如果我们发现你的产品或使用不遵守这些政策，我们可能会要求你做出必要的更改。重复或严重的违规行为可能导致进一步的行动，包括暂停或终止你的帐户。
 
 我们的政策可能会随着我们对模型使用和滥用的了解而改变。
 
@@ -57,4 +57,4 @@
 
 
 
-您可以使用我们的[免费审核终端](https://platform.openai.com/docs/guides/moderation)和[最佳安全实践](https://platform.openai.com/docs/guides/safety-best-practices)来帮助您保持应用程序的安全。
+你可以使用我们的[免费审核终端](https://platform.openai.com/docs/guides/moderation)和[最佳安全实践](https://platform.openai.com/docs/guides/safety-best-practices)来帮助你保持应用程序的安全。
